@@ -7,7 +7,7 @@
 class PlusOne {
     public int[] plusOne(int[] digits) {
         int index = digits.length - 1;
-        
+
         for (int i = index; i >=0; i--) {
             if (digits[i] == 9) {
                 digits[i] = 0;
@@ -27,8 +27,11 @@ class PlusOne {
         }
         return digits;
     }
-public static void main(String[] args) {
+    public static void main(String[] args) {
+        Plus initialArray = new PlusOne();
+        plusOneArray = initialArray.plusOne([9, 9]);
         System.out.println("Hello from Elena!");
+        System.out.println("Initial array: [9, 9]");
+        System.out.println("Plus One array: " + Arrays.toString(plusOneArray));
+    }
 }
-}
-
