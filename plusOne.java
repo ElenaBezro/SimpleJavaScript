@@ -4,7 +4,7 @@
 // The large integer does not contain any leading 0's.
 //Increment the large integer by one and return the resulting array of digits.
 
-class Solution {
+class PlusOne {
     public int[] plusOne(int[] digits) {
         int index = digits.length - 1;
         
@@ -27,5 +27,8 @@ class Solution {
         }
         return digits;
     }
+public static void main(String[] args) {
+        System.out.println("Hello from Elena!");
+}
 }
 
