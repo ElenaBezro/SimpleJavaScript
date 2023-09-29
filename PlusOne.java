@@ -32,6 +32,6 @@ class PlusOne {
         plusOneArray = initialArray.plusOne([9, 9]);
         System.out.println("Hello from Elena!");
         System.out.println("Initial array: [9, 9]");
-        System.out.println("Plus One array: %s" + plusOneArray.toString);
+        System.out.println("Plus One array: " + Arrays.toString(plusOneArray));
     }
 }
