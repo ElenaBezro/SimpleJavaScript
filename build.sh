@@ -1,5 +1,5 @@
 
-javac plusOne.java
+javac PlusOne.java
 
 jar --create --file plusOne.jar --manifest=MANIFEST.MF PlusOne.class
 
