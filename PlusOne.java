@@ -1,3 +1,4 @@
+import java.util.Arrays;
 // You are given a large integer represented as an integer array digits,
 // where each digits[i] is the ith digit of the integer. The digits are
 // ordered from most significant to least significant in left-to-right order.
@@ -5,7 +6,7 @@
 //Increment the large integer by one and return the resulting array of digits.
 
 class PlusOne {
-    public int[] plusOne(int[] digits) {
+    public static int[] plusOne(int... digits) {
         int index = digits.length - 1;
 
         for (int i = index; i >=0; i--) {
@@ -28,8 +29,7 @@ class PlusOne {
         return digits;
     }
     public static void main(String[] args) {
-        Plus initialArray = new PlusOne();
-        plusOneArray = initialArray.plusOne([9, 9]);
+        int[] plusOneArray = PlusOne.plusOne(9, 9);
         System.out.println("Hello from Elena!");
         System.out.println("Initial array: [9, 9]");
         System.out.println("Plus One array: " + Arrays.toString(plusOneArray));
